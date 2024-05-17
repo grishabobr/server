@@ -7,6 +7,8 @@ const { marks1 } = require('./charts/marksCharts/marks1');
 const { marks2 } = require('./charts/marksCharts/marks2');
 const { marks3 } = require('./charts/marksCharts/marks3');
 const { marks4 } = require('./charts/marksCharts/marks4');
+const { marks5 } = require('./charts/marksCharts/marks5');
+const { marks6 } = require('./charts/marksCharts/marks6');
 
 
 const app = express();
@@ -32,6 +34,8 @@ app.post('/marks1', (req, res) => marks1(req, res));
 app.post('/marks2', (req, res) => marks2(req, res));
 app.post('/marks3', (req, res) => marks3(req, res));
 app.post('/marks4', (req, res) => marks4(req, res));
+app.post('/marks5', (req, res) => marks5(req, res));
+app.post('/marks6', (req, res) => marks6(req, res));
 
 
 app.listen(3333, () => {
