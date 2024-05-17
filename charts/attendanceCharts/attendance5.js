@@ -19,7 +19,6 @@ let calcAttendance = async (student_id) => {
 
     let attendance = dbRes.rows;
     attendance = attendance.map((att) => att.agg);
-    console.log(attendance)
     return attendance;
 }
 
