@@ -31,7 +31,7 @@ let getMarks = async (student_id) => {
     
     let marks = dbRes.rows
 
-    marks.map((mark) => toDate(mark))
+    marks = marks.map((mark) => toDate(mark))
 
     return marks;
 }

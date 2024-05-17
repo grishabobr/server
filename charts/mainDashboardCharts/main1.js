@@ -27,7 +27,7 @@ let get_avg_mark = async (student_id) => {
         where 
         mark in ('отлично', 'хорошо', 'удовл.')
         and student_id = $1`, [student_id]);
-    return dbRes.rows[0].avg ;
+    return dbRes.rows[0].avg;
 }
 
 let get_avg_mark_sem = async (student_id) => {
