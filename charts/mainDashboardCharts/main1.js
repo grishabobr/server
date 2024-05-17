@@ -1,6 +1,5 @@
 const { db } = require("../../db_config");
 
-db.connect();
 
 let get_week_attendance = async (student_id) => {
     dbRes = await db.query(`select

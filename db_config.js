@@ -8,4 +8,6 @@ const db = new Client({
     port: 5432
 });
 
+db.connect();
+
 module.exports.db = db;
