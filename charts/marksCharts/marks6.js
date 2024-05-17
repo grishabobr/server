@@ -10,7 +10,6 @@ let getExamMarks = async (student_id) => {
 
     let marks = dbRes.rows
 
-    console.log(marks)
     return marks;
 }
 

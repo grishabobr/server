@@ -9,6 +9,11 @@ const { marks3 } = require('./charts/marksCharts/marks3');
 const { marks4 } = require('./charts/marksCharts/marks4');
 const { marks5 } = require('./charts/marksCharts/marks5');
 const { marks6 } = require('./charts/marksCharts/marks6');
+const { attendance1 } = require('./charts/attendanceCharts/attendance1');
+const { attendance3 } = require('./charts/attendanceCharts/attendance3');
+const { attendance2 } = require('./charts/attendanceCharts/attendance2');
+const { attendance4 } = require('./charts/attendanceCharts/attendance4');
+const { attendance5 } = require('./charts/attendanceCharts/attendance5');
 
 
 const app = express();
@@ -36,6 +41,12 @@ app.post('/marks3', (req, res) => marks3(req, res));
 app.post('/marks4', (req, res) => marks4(req, res));
 app.post('/marks5', (req, res) => marks5(req, res));
 app.post('/marks6', (req, res) => marks6(req, res));
+
+app.post('/attendance1', (req, res) => attendance1(req, res));
+app.post('/attendance2', (req, res) => attendance2(req, res));
+app.post('/attendance3', (req, res) => attendance3(req, res));
+app.post('/attendance4', (req, res) => attendance4(req, res));
+app.post('/attendance5', (req, res) => attendance5(req, res));
 
 
 app.listen(3333, () => {
